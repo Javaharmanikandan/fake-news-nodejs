@@ -9,11 +9,11 @@ require('dotenv').config();
 
 // Create PostgreSQL connection pool
 const pool = new Pool({
-    host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || 5432,
-    database: process.env.DB_NAME || 'fake_news_db',
-    user: process.env.DB_USER || 'postgres',
-    password: process.env.DB_PASSWORD || 'root',
+    host: 'db.kdkaxpzmieaiwimexfuy.supabase.co' || 'localhost',
+    port: 5432 || 5432,
+    database: 'postgres' || 'postgres',
+    user: 'postgres' || 'postgres',
+    password: 'P_2JMvFd.QLW#wH' || 'P_2JMvFd.QLW#wH',
     max: 20, // Maximum number of clients in the pool
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
