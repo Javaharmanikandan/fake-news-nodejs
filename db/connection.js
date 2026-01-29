@@ -14,9 +14,9 @@ const pool = new Pool({
     database: 'postgres' || 'postgres',
     user: 'postgres' || 'postgres',
     password: 'P_2JMvFd.QLW#wH' || 'P_2JMvFd.QLW#wH',
-    max: 20, // Maximum number of clients in the pool
-    idleTimeoutMillis: 30000,
-    connectionTimeoutMillis: 2000,
+    ssl: { rejectUnauthorized: false } // required by Supabase
+
+   
 });
 
 // Test database connection
